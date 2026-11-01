@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#073f99">
+  <meta name="description" content="TULPAR — поездки Алматы ⇄ Сарыағаш. Связаться и посмотреть автобусы.">
+  <title>TULPAR — Алматы ⇄ Сарыағаш</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 2a16 16 0 0 0 5.5 5.5L16 13l5 2v4a2 2 0 0 1-2 2C10.2 21 3 13.8 3 5a2 2 0 0 1 2-2Z"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.2-4.6A8.5 8.5 0 1 1 20.5 11.5Z"/><path d="M8 8c2 5 3 6 8 8"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+    <symbol id="i-tiktok" viewBox="0 0 24 24"><path d="M14 3v11.5a4.5 4.5 0 1 1-4.5-4.5M14 3c.8 2.8 2.5 4.3 5.5 4.5v3C16.8 10.5 15 9.6 14 8"/></symbol>
+    <symbol id="i-save" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M4 17v3h16v-3"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5 19 19M19 5 5 19"/></symbol>
+  </svg>
+
+  <!-- ВАШИ КОНТАКТЫ: заполните значения в кавычках ниже.
+       data-phone="+77001234567" — номер для прямого звонка и сохранения контакта.
+       data-whatsapp="+77001234567" — номер WhatsApp.
+       data-instagram="https://www.instagram.com/username/" — ссылка Instagram.
+       data-tiktok="https://www.tiktok.com/@username" — ссылка TikTok.
+       Если поле пустое, соответствующая кнопка неактивна. -->
+  <main class="page" id="top"
+        data-phone="+7 705 404 7824"
+        data-whatsapp="+7 705 404 7824"
+        data-instagram="https://www.instagram.com/tulpar_avtobus?utm_source=ig_web_button_share_sheet&amp;obrf=ZDNlZDc0MzIxNw=="
+        data-tiktok="https://www.tiktok.com/@tulpar__avtobus?is_from_webapp=1&amp;sender_device=pc">
+    <article class="card" aria-label="Визитка TULPAR">
+      <header class="card-top">
+        <a class="brand" href="#top" aria-label="TULPAR — наверх"><img src="acset/tulpar-logo.png" alt="TULPAR"></a>
+        <span class="top-label">АЛМАТЫ <span aria-hidden="true">⇄</span> САРЫАҒАШ</span>
+      </header>
+      
+      <div class="main-grid">
+        <div class="hero-photo-wrap">
+          <!-- Большое фото автоматически берётся из первой строки списка фотографий ниже. -->
+          <img class="hero-photo" id="hero-photo" alt="Автобус">
+          <div class="photo-shade"></div>
+          <span class="photo-caption">ДЕМОНСТРАЦИОННОЕ ФОТО</span>
+        </div>
+        <section class="intro" aria-labelledby="page-title">
+          <div class="eyebrow"><span></span> ПАССАЖИРСКИЕ ПЕРЕВОЗКИ</div>
+          <h1 id="page-title"><span class="route-city">Алматы</span><span class="route-arrow">⇄</span><span class="route-city route-destination">Сарыағаш</span></h1>
+          <p class="intro-text">Узнайте о местах и деталях поездки напрямую у TULPAR. Выберите удобный способ связи ниже.</p>
+          <nav class="actions" aria-label="Связаться с TULPAR">
+            <a class="action action-whatsapp is-disabled" id="whatsapp-link" aria-disabled="true" tabindex="-1"><span class="action-icon"><svg class="icon"><use href="#i-whatsapp"/></svg></span>WhatsApp<svg class="icon action-arrow"><use href="#i-arrow"/></svg></a>
+            <a class="action is-disabled" id="call-link" aria-disabled="true" tabindex="-1"><span class="action-icon"><svg class="icon"><use href="#i-phone"/></svg></span>Позвонить<svg class="icon action-arrow"><use href="#i-arrow"/></svg></a>
+            <a class="action is-disabled" id="instagram-link" aria-disabled="true" tabindex="-1"><span class="action-icon"><svg class="icon"><use href="#i-instagram"/></svg></span>Instagram<svg class="icon action-arrow"><use href="#i-arrow"/></svg></a>
+            <a class="action action-tiktok is-disabled" id="tiktok-link" aria-disabled="true" tabindex="-1"><span class="action-icon"><svg class="icon"><use href="#i-tiktok"/></svg></span>TikTok<svg class="icon action-arrow"><use href="#i-arrow"/></svg></a>
+          </nav>
+          <div class="contact">
+            <span class="contact-label">КОНТАКТНЫЙ НОМЕР</span>
+            <div class="contact-row">
+              <a class="phone-link is-disabled" id="phone-link" aria-disabled="true" tabindex="-1"><svg class="icon"><use href="#i-phone"/></svg><span id="phone-text">Номер пока не указан</span></a>
+              <button class="save-contact" id="save-contact" type="button" disabled><svg class="icon"><use href="#i-save"/></svg>Сохранить контакт</button>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="gallery" aria-labelledby="gallery-title">
+        <div class="gallery-heading">
+          <div><span class="gallery-kicker">ФОТОГАЛЕРЕЯ</span><h2 id="gallery-title">Автобусы и салон</h2></div>
+          <div class="gallery-navigation" aria-label="Прокрутка фотографий">
+            <span id="gallery-count">00 / 00</span>
+            <button id="gallery-prev" type="button" aria-label="Предыдущее фото"><svg class="icon"><use href="#i-arrow"/></svg></button>
+            <button id="gallery-next" type="button" aria-label="Следующее фото"><svg class="icon"><use href="#i-arrow"/></svg></button>
+          </div>
+        </div>
+        <!-- ВАШИ ФОТО: все файлы лежат в папке acset.
+             Каждая строка <img> ниже = одна фотография в галерее.
+             ЗАМЕНИТЬ: положите своё фото с тем же именем в acset ИЛИ измените имя в src.
+             ДОБАВИТЬ: положите фото в acset и скопируйте одну строку <img>,
+             например: <img src="acset/moi-avtobus.jpg" alt="Мой автобус">
+             Порядок строк = порядок в галерее. Первая строка = большое фото сверху.
+             После замены фото для примера удалите data-demo="true" из его строки.
+             Когда таких пометок не останется, подписи «демонстрационное фото» исчезнут. -->
+        <div class="gallery-track" id="gallery-track" aria-label="Фотографии автобусов">
+          <img src="acset/bus-01.jpg" alt="Автобус снаружи" data-demo="true">
+          <img src="acset/bus-02.jpg" alt="Автобус в дороге" data-demo="true">
+          <img src="acset/bus-03.jpg" alt="Салон автобуса" data-demo="true">
+        </div>
+        <p class="gallery-note">Демонстрационные фотографии автобусов.</p>
+      </section>
+    </article>
+  </main>
+  <dialog class="lightbox" id="lightbox" aria-label="Просмотр фотографии автобуса">
+    <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Закрыть фото"><svg class="icon"><use href="#i-close"/></svg></button>
+    <button class="lightbox-arrow lightbox-prev" id="lightbox-prev" type="button" aria-label="Предыдущее фото"><svg class="icon"><use href="#i-arrow"/></svg></button>
+    <figure><img id="lightbox-image" alt=""><figcaption id="lightbox-caption"></figcaption></figure>
+    <button class="lightbox-arrow lightbox-next" id="lightbox-next" type="button" aria-label="Следующее фото"><svg class="icon"><use href="#i-arrow"/></svg></button>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
